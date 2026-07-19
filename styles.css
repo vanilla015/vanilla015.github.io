@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Press Start 2P";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/press-start-2p-latin.woff2") format("woff2");
+}
+
 :root {
   color-scheme: dark;
   --background: #09090b;
@@ -10,7 +18,7 @@
   --purple-dark: #4c1d95;
   --green: #65f6a6;
   --amber: #f6c665;
-  --mono: "Cascadia Code", "IBM Plex Mono", "Fira Code", Consolas, monospace;
+  --pixel: "Press Start 2P", monospace;
 }
 
 * {
@@ -31,8 +39,9 @@ body {
   overflow-x: hidden;
   color: var(--text);
   background: var(--background);
-  font-family: var(--mono);
-  line-height: 1.6;
+  font-family: var(--pixel);
+  font-size: 10px;
+  line-height: 2;
 }
 
 a {
@@ -47,7 +56,7 @@ a {
   padding: 9px 12px;
   color: var(--background);
   background: var(--green);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .skip-link:focus {
@@ -74,8 +83,8 @@ a {
   justify-content: space-between;
   gap: 18px;
   border-bottom: 2px solid var(--line);
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 9px;
+  font-weight: 400;
 }
 
 .terminal-title {
@@ -91,7 +100,7 @@ a {
   align-items: center;
   gap: 8px;
   color: var(--green);
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .terminal-state i {
@@ -124,12 +133,12 @@ a {
 .command {
   margin: 0 0 18px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .command span {
   color: var(--green);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .ascii-viewport {
@@ -141,7 +150,7 @@ a {
   width: max-content;
   margin: 0;
   color: var(--purple);
-  font: 700 8px/.82 var(--mono);
+  font: 400 8px/.82 var(--pixel);
   letter-spacing: 0;
   white-space: pre;
   transform-origin: top left;
@@ -162,22 +171,22 @@ a {
 .profile h1 {
   margin: 0;
   color: var(--text);
-  font-size: 42px;
-  line-height: 1.12;
+  font-size: 28px;
+  line-height: 1.45;
 }
 
 .role {
   margin: 12px 0 20px;
   color: var(--amber);
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 9px;
+  font-weight: 400;
 }
 
 .intro {
   max-width: 54ch;
   margin: 0;
   color: #c7c1d0;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .profile-data {
@@ -197,14 +206,14 @@ a {
 
 .profile-data dt {
   color: var(--purple);
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .profile-data dd {
   margin: 5px 0 0;
   overflow-wrap: anywhere;
   color: var(--text);
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .project {
@@ -215,13 +224,13 @@ a {
 .project h2 {
   margin: 0 0 10px;
   color: var(--purple);
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .project p:not(.command) {
   margin: 0;
   color: #c7c1d0;
-  font-size: 14px;
+  font-size: 9px;
 }
 
 .terminal-links {
@@ -236,8 +245,8 @@ a {
   padding: 6px 0;
   color: var(--text);
   text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 9px;
+  font-weight: 400;
 }
 
 .terminal-links a span {
@@ -260,7 +269,7 @@ a {
   gap: 8px;
   border-top: 2px solid var(--line);
   color: var(--green);
-  font-size: 12px;
+  font-size: 8px;
 }
 
 .cursor {
@@ -315,13 +324,16 @@ a {
   }
 
   .profile h1 {
-    font-size: 31px;
+    font-size: 21px;
   }
 
-  .role,
+  .role {
+    font-size: 8px;
+  }
+
   .intro,
   .project p:not(.command) {
-    font-size: 13px;
+    font-size: 9px;
   }
 
   .profile-data {

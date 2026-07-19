@@ -11,8 +11,10 @@ function fitAsciiPortrait() {
 
   if (!naturalWidth || !naturalHeight || !availableWidth) return;
 
-  const scale = Math.min(1, availableWidth / naturalWidth);
-  asciiArt.style.transform = `scale(${scale})`;
+  const characterRatio = 0.58;
+  const correctedWidth = naturalWidth * characterRatio;
+  const scale = Math.min(1, availableWidth / correctedWidth);
+  asciiArt.style.transform = `scale(${scale * characterRatio}, ${scale})`;
   asciiViewport.style.height = `${Math.ceil(naturalHeight * scale)}px`;
 }
 
