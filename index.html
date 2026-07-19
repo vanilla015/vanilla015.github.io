@@ -3,60 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#09090b">
-  <meta name="description" content="Anthony Flags, estudiante de Ingeniería en Sistemas y creador de Aura Platform.">
-  <meta property="og:title" content="Anthony Flags | Developer">
-  <meta property="og:description" content="Software, automatización e inteligencia artificial. Creador de Aura Platform.">
+  <meta name="theme-color" content="#100c13">
+  <meta property="og:title" content="ant.flags">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vanilla015.github.io/">
-  <title>Anthony Flags | Terminal</title>
+  <title>ant.flags</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#perfil">Saltar al perfil</a>
+  <a class="skip-link" href="#profile">Saltar al perfil</a>
 
-  <main class="terminal" aria-label="Perfil de Anthony Flags">
-    <header class="terminal-bar">
-      <span class="terminal-title">anthony@github:~</span>
-      <span class="terminal-state"><i aria-hidden="true"></i> ONLINE</span>
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="wordmark" href="#profile">ant.flags</a>
+      <nav aria-label="Navegación principal">
+        <a href="#projects">projects</a>
+        <a href="https://github.com/vanilla015" target="_blank" rel="noopener">github</a>
+      </nav>
+      <div class="pixel-marks" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
     </header>
 
-    <div class="terminal-grid">
-      <section class="portrait" aria-labelledby="portrait-command">
-        <p class="command" id="portrait-command"><span>$</span> render profile.txt</p>
-        <div class="ascii-viewport" id="ascii-viewport">
-          <pre class="ascii-art" id="ascii-art" aria-label="Retrato ASCII de Anthony Flags">Cargando retrato ASCII...</pre>
-        </div>
-      </section>
+    <main>
+      <section class="hero" id="profile" aria-labelledby="profile-name">
+        <div class="identity">
+          <p class="section-code">PROFILE_001</p>
+          <h1 id="profile-name"><span>ant.</span>flags</h1>
 
-      <section class="profile" id="perfil">
-        <p class="command"><span>$</span> whoami</p>
-        <h1>Anthony Flags</h1>
-        <p class="role">Estudiante de Ingeniería en Sistemas // UTN</p>
-        <p class="intro">Desarrollo software, automatizaciones y agentes de IA para convertir procesos complejos en herramientas simples.</p>
+          <dl class="facts">
+            <div>
+              <dt>age</dt>
+              <dd>20</dd>
+            </div>
+            <div>
+              <dt>study</dt>
+              <dd>UTN</dd>
+            </div>
+          </dl>
 
-        <dl class="profile-data">
-          <div><dt>ubicación</dt><dd>Córdoba, Argentina</dd></div>
-          <div><dt>enfoque</dt><dd>Software + IA + Automatización</dd></div>
-        </dl>
-
-        <div class="project">
-          <p class="command"><span>$</span> cat projects/aura.txt</p>
-          <h2>Aura</h2>
-          <p>Plataforma multicanal para centralizar conversaciones, automatizar la atención con IA y gestionar equipos y operaciones desde un mismo lugar.</p>
+          <a class="github-link" href="https://github.com/vanilla015" target="_blank" rel="noopener">
+            github.com/vanilla015 <span aria-hidden="true">↗</span>
+          </a>
         </div>
 
-        <nav class="terminal-links" aria-label="Enlaces externos">
-          <a href="https://automationsaura.com" target="_blank" rel="noopener"><span>&gt;</span> abrir Aura</a>
-          <a href="https://github.com/vanilla015" target="_blank" rel="noopener"><span>&gt;</span> ver GitHub</a>
-        </nav>
-      </section>
-    </div>
+        <figure class="portrait-frame">
+          <figcaption>
+            <span>profile.asc</span>
+            <span id="ascii-size">---</span>
+          </figcaption>
+          <div class="ascii-viewport" id="ascii-viewport">
+            <pre class="ascii-art" id="ascii-art" aria-label="Retrato ASCII de ant.flags">LOADING...</pre>
+          </div>
+        </figure>
 
-    <footer class="terminal-footer">
-      <span>anthony@dev:~$</span><i class="cursor" aria-hidden="true"></i>
+        <a class="next-section" href="#projects">
+          <span>01</span>
+          <strong>projects</strong>
+          <i aria-hidden="true">↓</i>
+        </a>
+      </section>
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <header class="projects-header">
+          <p class="section-code">INDEX_001</p>
+          <h2 id="projects-title">Projects</h2>
+          <span>001 FILE</span>
+        </header>
+
+        <div class="project-list">
+          <!-- Para agregar un proyecto, duplicar este enlace y cambiar sus datos. -->
+          <a class="project-row" href="https://automationsaura.com" target="_blank" rel="noopener">
+            <span class="project-number">01</span>
+            <strong>Aura</strong>
+            <span class="project-year">2026</span>
+            <span class="project-open" aria-hidden="true">OPEN ↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>ant.flags</span>
+      <span>UTN // 2026</span>
     </footer>
-  </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
