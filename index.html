@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Portfolio de Anthony Flags, estudiante de Ingeniería en Sistemas y desarrollador de automatizaciones, agentes de IA y plataformas SaaS.">
+  <meta property="og:title" content="Anthony Flags | Developer">
+  <meta property="og:description" content="Automatización, IA e infraestructura para productos que resuelven problemas reales.">
+  <meta property="og:image" content="https://vanilla015.github.io/assets/hero-pixel.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vanilla015.github.io/">
+  <title>Anthony Flags | Systems Developer</title>
+  <link rel="icon" href="assets/avatar.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ir al inicio">
+      <span class="brand-mark" aria-hidden="true">AF</span>
+      <span>ANTHONY.FLAGS</span>
+    </a>
+
+    <button class="menu-button" id="menu-button" type="button" aria-controls="site-nav" aria-expanded="false">
+      <span class="menu-pixels" aria-hidden="true"></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="#perfil">Perfil</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero-pixel.png" alt="Estación de desarrollo pixel art frente a la ciudad de Córdoba" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="system-line"><span class="status-dot"></span> SISTEMA LISTO // CÓRDOBA, AR</p>
+        <h1 id="hero-title">Anthony<br><span>Flags</span></h1>
+        <p class="hero-role">Systems Developer + Automation Builder</p>
+        <p class="hero-copy">Construyo plataformas, agentes de IA e infraestructura que convierten procesos complejos en productos simples de usar.</p>
+        <div class="hero-actions">
+          <a class="pixel-button primary" href="#proyectos">Ver proyectos</a>
+          <a class="pixel-button secondary" href="https://github.com/vanilla015" target="_blank" rel="noopener">Abrir GitHub</a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#perfil" aria-label="Continuar al perfil">
+        <span>SCROLL</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section class="section profile-section" id="perfil">
+      <div class="section-heading">
+        <p class="section-index">01 // PLAYER PROFILE</p>
+        <h2>Diseño sistemas que trabajan de verdad.</h2>
+      </div>
+
+      <div class="profile-layout">
+        <div class="avatar-frame reveal">
+          <div class="avatar-screen">
+            <img src="assets/avatar.png" alt="Avatar de GitHub de Anthony Flags" loading="lazy">
+          </div>
+          <div class="avatar-data">
+            <span>PLAYER_01</span>
+            <strong>ANTHONY FLAGS</strong>
+            <span>LVL 20 // UTN</span>
+          </div>
+        </div>
+
+        <div class="profile-copy reveal">
+          <p class="lead">Soy estudiante de Ingeniería en Sistemas en la UTN y desarrollador enfocado en automatización, inteligencia artificial y productos web.</p>
+          <p>Me interesa el punto donde el software deja de ser una demo y empieza a resolver operaciones reales: conectar canales, ordenar datos, automatizar decisiones y mantener toda la infraestructura funcionando.</p>
+          <dl class="stats" aria-label="Datos de perfil">
+            <div><dt>BASE</dt><dd>Córdoba, Argentina</dd></div>
+            <div><dt>CLASE</dt><dd>Systems Engineering</dd></div>
+            <div><dt>FOCO</dt><dd>SaaS + AI + Automation</dd></div>
+            <div><dt>ESTADO</dt><dd class="online">Construyendo</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="proyectos">
+      <div class="section-heading reveal">
+        <p class="section-index">02 // SELECT MISSION</p>
+        <h2>Proyectos y sistemas.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-topline"><span>PROJECT_001</span><span class="live-label">ACTIVE</span></div>
+          <div class="project-number" aria-hidden="true">01</div>
+          <h3>Aura Platform</h3>
+          <p>Plataforma multicanal para centralizar conversaciones, automatizar atención con IA, gestionar equipos, colecciones y operaciones desde un mismo lugar.</p>
+          <ul class="tag-list" aria-label="Tecnologías de Aura Platform">
+            <li>JavaScript</li><li>PHP</li><li>Directus</li><li>n8n</li><li>Docker</li>
+          </ul>
+          <a class="project-link" href="https://automationsaura.com" target="_blank" rel="noopener">VISITAR PROYECTO <span aria-hidden="true">&gt;</span></a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span>PROJECT_002</span><span>R&amp;D</span></div>
+          <div class="project-number" aria-hidden="true">02</div>
+          <h3>Agentes de IA</h3>
+          <p>Agentes conectados a herramientas, memoria, catálogos y canales reales. Diseñados para responder, calificar, derivar y ejecutar acciones de negocio.</p>
+          <ul class="tag-list" aria-label="Tecnologías de agentes IA">
+            <li>LLM</li><li>n8n</li><li>PostgreSQL</li><li>APIs</li>
+          </ul>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline"><span>PROJECT_003</span><span>INFRA</span></div>
+          <div class="project-number" aria-hidden="true">03</div>
+          <h3>Cloud Lab</h3>
+          <p>Servicios self-hosted, despliegues reproducibles, proxies, bases de datos, monitoreo, backups y automatización de infraestructura.</p>
+          <ul class="tag-list" aria-label="Tecnologías de infraestructura">
+            <li>Docker</li><li>Traefik</li><li>Linux</li><li>GitHub Actions</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="section-heading reveal">
+        <p class="section-index">03 // INVENTORY</p>
+        <h2>Herramientas equipadas.</h2>
+      </div>
+
+      <div class="terminal reveal" role="region" aria-label="Stack tecnológico">
+        <div class="terminal-bar">
+          <span>anthony@devbox:~/skills</span>
+          <span>UTF-8</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> load --stack=production</p>
+          <div class="skill-grid">
+            <div><span class="skill-color violet"></span><strong>FRONTEND</strong><p>JavaScript, HTML, CSS, Responsive UI</p></div>
+            <div><span class="skill-color cyan"></span><strong>BACKEND</strong><p>PHP, APIs REST, Webhooks, Auth</p></div>
+            <div><span class="skill-color amber"></span><strong>DATA</strong><p>PostgreSQL, Directus, Redis</p></div>
+            <div><span class="skill-color green"></span><strong>AUTOMATION</strong><p>n8n, AI Agents, Integrations</p></div>
+            <div><span class="skill-color pink"></span><strong>DEVOPS</strong><p>Docker, Traefik, Linux, CI/CD</p></div>
+            <div><span class="skill-color blue"></span><strong>CHANNELS</strong><p>WhatsApp, Web Chat, Google APIs</p></div>
+          </div>
+          <p class="terminal-ready"><span class="prompt">&gt;</span> STATUS: READY TO BUILD<span class="cursor" aria-hidden="true"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="contact-inner reveal">
+        <p class="section-index">04 // OPEN CHANNEL</p>
+        <h2>¿Construimos algo útil?</h2>
+        <p>Estoy desarrollando productos en la intersección entre software, automatización e IA. Podés encontrar el código público y seguir mis próximos proyectos en GitHub.</p>
+        <a class="pixel-button primary" href="https://github.com/vanilla015" target="_blank" rel="noopener">github.com/vanilla015</a>
+      </div>
+      <div class="contact-decoration" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>ANTHONY FLAGS // <span id="year">2026</span></p>
+    <a href="#top">BACK TO TOP</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
